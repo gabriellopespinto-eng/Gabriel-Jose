@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Autobiografia</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101010;
+    color: white;
+}
+
+header {
+    background: #181818;
+    padding: 22px;
+    text-align: center;
+    border-bottom: 2px solid #ff3131;
+}
+
+header h1 {
+    color: #ff3131;
+    font-size: 30px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff3131;
+}
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #202020, #440000);
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: #ff3131;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+section {
+    padding: 55px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    color: #ff3131;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.sobre {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #202020;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #ff3131;
+}
+
+.card .emoji {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #ff3131;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+footer {
+    background: #181818;
+    padding: 25px;
+    text-align: center;
+    color: #aaa;
+    border-top: 2px solid #ff3131;
+}
+
+button {
+    margin-top: 25px;
+    background: #ff3131;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #cc2020;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Minha Autobiografia</h1>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#gostos">Meus gostos</a>
+        <a href="#sonhos">Meus sonhos</a>
+    </nav>
+</header>
+
+<div class="hero" id="inicio">
+    <h2>Bem-vindo à <span>Minha História!</span></h2>
+    <p>
+        Um pouco sobre quem eu sou, o que gosto de fazer
+        e as coisas que tornam minha vida especial.
+    </p>
+    <button onclick="document.getElementById('sobre').scrollIntoView()">
+        Conheça minha história
+    </button>
+</div>
+
+<section id="sobre">
+    <h2>🙋 Sobre mim</h2>
+    <div class="sobre">
+        <p>
+            Olá! Esta é a minha autobiografia.
+            Sou uma pessoa que gosta de aproveitar a vida,
+            conhecer lugares, viver novas experiências
+            e estar perto das pessoas que são importantes para mim.
+        </p>
+        <p>
+            Gosto de me divertir, sair com meus amigos,
+            aproveitar minha família e fazer as coisas
+            que me deixam feliz.
+        </p>
+    </div>
+</section>
+
+<section id="gostos">
+    <h2>🔥 Coisas que eu gosto de fazer</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="emoji">🎮</div>
+            <h3>Videogame</h3>
+            <p>Gosto de jogar videogame, me divertir e aproveitar meu tempo livre.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🏍️</div>
+            <h3>Andar de moto</h3>
+            <p>Gosto de andar de moto e sentir a liberdade de estar na estrada.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">👥</div>
+            <h3>Meus amigos</h3>
+            <p>Adoro sair com meus amigos, conversar e dar boas risadas.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">⚽</div>
+            <h3>Jogar bola</h3>
+            <p>Gosto de jogar futebol e me divertir praticando esporte.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🎉</div>
+            <h3>Eventos</h3>
+            <p>Gosto de ir a eventos, curtir momentos e conhecer coisas novas.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">❤️</div>
+            <h3>Minha família</h3>
+            <p>Gosto de sair com minha família e aproveitar cada momento juntos.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="sonhos">
+    <h2>🚀 Meus sonhos e objetivos</h2>
+    <div class="sobre">
+        <p>
+            Quero conquistar meus objetivos, realizar meus sonhos,
+            conhecer lugares novos e aproveitar cada fase da vida.
+            Sei que ainda tenho muitas histórias para viver e contar!
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Minha Autobiografia</p>
+    <p>Minha história, meu jeito de viver! ❤️</p>
+</footer>
+
+</body>
+</html>
